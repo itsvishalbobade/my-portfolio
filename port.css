@@ -1,0 +1,457 @@
+.body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    height: 100 !important;
+
+
+}
+
+.mainbg {
+    background-image: url(./back\ bg\ .jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.navbar {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar-contain {
+    color: white;
+}
+
+/* #navbar-contain:hover{   
+    border-bottom: 2px solid rgb(255, 255, 0);
+} */
+#navbar-contain::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 251, 0);
+    transition: width .4s;
+}
+
+#navbar-contain:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar-expand-lg.scrolled {
+
+    background: #000;
+
+}
+
+.text-wrapper {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.text-inner {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.experties {
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    font-size: 3rem;
+    justify-content: space-between;
+}
+
+.experties-heading {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.experties-word {
+    color: black;
+
+}
+
+.about-head {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+#aboutpic {
+
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-me {
+    color: black;
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+
+.about-text {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.details {
+    color: black;
+    font-size: 1.5rem;
+    padding-top: 30px;
+
+}
+
+.about-person {
+    list-style: none;
+    color: black;
+    font-size: 1.2rem;
+
+}
+
+.skill-head {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+.project-head {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+.project-title {
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+}
+
+#linkproject {
+    width: 50%;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 80px;
+
+
+}
+
+.card {
+    /* border: 1px solid black; */
+    /* height: 270px; */
+    background-color: rgb(238, 238, 238);
+    border: none;
+
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+
+
+
+}
+
+#linkproject:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.gallery-head {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+#gallery {
+    height: 290px;
+    width: 100%;
+}
+
+.contact-head {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+form {
+    margin-left: 0px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+#send {
+    border-radius: 10px;
+}
+
+#send:hover {
+    background-color: #5264AE;
+}
+
+.contact-img {
+    height: 420px;
+    width: 100%;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    /* overflow:hidden; */
+    background: #262626;
+    /* color: #627482  !important; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+small {
+    font-size: calc(13px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+}
+
+.bold-text {
+    color: #ffffff !important;
+}
+
+
+/* .mt-55{
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+} */
+
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important;
+}
+
+.social {
+    font-size: 21px !important;
+}
+
+.rights {
+    font-size: calc(12px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
+}
+
+#cv {
+    color: white;
+    background-color: #e42c64;
+
+}
+
+#whatsapp:hover {
+    color: #66fba48b;
+}
+
+.fa:hover {
+    color: #fffffffa;
+}
+
+#github:hover {
+    color: rgb(146, 50, 146);
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 183, 255);
+}
+
+.fa-linkedin-square:hover {
+    color: rgb(61, 61, 193);
+}
+
+.fa {
+    color: white;
+
+}
+
+#icon {
+    color: black;
+}
+
+/* animation */
+.text-wrapper {
+    animation: fadeInUp 2s ease backwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}
+
+.text-inner {
+    animation: fadeInUp 2s ease backwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}
+
+/* media qurey */
+@media only screen and (min-device-width : 260px) and (max-device-width : 340px) {
+    .mainbg {
+        height: 790px;
+        width: 100%;
+    }
+
+    .text-wrapper {
+        font-size: 3rem
+    }
+}
+
+/* For 640 Resolution */
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    .mainbg {
+        height: 810px;
+    }
+}
